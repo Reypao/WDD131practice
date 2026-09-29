@@ -11,7 +11,7 @@ body {
     "header header"
     "nav nav"
     "main aside"
-    "footer footer footer";
+    "footer footer";
   min-height: 100vh;
   font-family:
     "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -37,6 +37,10 @@ nav a {
   color: white;
   text-decoration: none;
 
+}
+
+#msj {
+  color: blue;
 }
 
 main {
