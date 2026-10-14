@@ -10,296 +10,99 @@
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  background-color: #ffffff;
-  color: var(--text-color);
-  font-family: "Didact Gothic", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
+    margin: 0;
+    background-color: #a8b4c9;
+    color: var(--text-color);
+    font-family: "Didact Gothic", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 /* =========================
-   HEADER
+   Header
 ========================= */
 
 .top-header {
-  background-color: var(--primary-color);
-  color: #ffffff;
+    background-color: var(--primary-color);
+    color: #ffffff;
 }
 
 #course-title {
-  display: block;
-  padding: 18px 16px;
-  text-align: center;
-  font-size: 1.4rem;
+    display: block;
+    padding: 18px 16px;
+    text-align: center;
+    font-size: 1.4rem;
 }
 
 /* =========================
-   NAVIGATION
+   Navigation
 ========================= */
-
 nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: var(--nav-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--nav-color);
 }
 
 nav a {
-  padding: 10px 16px;
-  color: #ffffff;
-  text-decoration: none;
+    padding: 10px 18px;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 nav a:hover {
-  background-color: #454545;
-  text-decoration: underline;
+    background-color: #454545;
+    text-decoration: none;
 }
 
 nav a:focus-visible {
-  outline: 3px solid #ffdf70;
-  outline-offset: -3px;
+    outline: 3px solid #ffdf70;
+    outline-offset: -3px;
 }
 
 /* =========================
-   MAIN LAYOUT
+  Main Layout 
 ========================= */
-
 main {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 16px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
 
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 20px;
 }
 
 .page-title {
-  grid-column: 1 / -1;
-  margin: 0 0 4px;
-  text-align: center;
-  font-size: 2rem;
+    grid-column: 1/-1;
+    margin: 0 0 4px;
+    text-align: center;
+    font-size: 2rem;
 }
 
-/* =========================
-   CARDS
-========================= */
 
+/* =========================
+       Card 
+========================= */
 .card {
-  min-width: 0;
-  overflow: hidden;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  background-color: #ffffff;
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: #ffffff;
 }
 
 .card h2 {
-  margin: 0;
-  padding: 8px 16px;
-  background-color: var(--primary-color);
-  color: #ffffff;
-  text-align: center;
-  font-size: 1.1rem;
+    
 }
 
-.card-content {
-  padding: 20px;
-}
 
-/* =========================
-   ABOUT ME
-========================= */
 
-.intro {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 140px;
-  gap: 20px;
-  align-items: start;
-}
 
-.intro-text p {
-  margin: 0 0 12px;
-}
 
-.intro > img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border: 1px solid var(--border-color);
-}
 
-.card h3 {
-  width: 80%;
-  margin: 16px auto;
-  padding-bottom: 6px;
-  border-bottom: 1px solid var(--border-color);
-  text-align: center;
-  font-size: 1.1rem;
-}
-
-/* =========================
-   LOCATION AND FLAG
-========================= */
-
-.location {
-  display: grid;
-  grid-template-columns: 150px minmax(0, 1fr);
-  gap: 20px;
-  align-items: center;
-}
-
-.location figure {
-  margin: 0;
-}
-
-.location img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border: 1px solid var(--border-color);
-}
-
-.location figcaption {
-  margin-top: 8px;
-  text-align: center;
-  font-size: 0.85rem;
-  font-style: italic;
-}
-
-.location p {
-  margin: 0;
-}
-
-/* =========================
-   WEB DEVELOPMENT RESOURCES
-========================= */
-
-/* La tarjeta que contiene la lista distribuye
-   su espacio para centrarla verticalmente. */
-
-.card:has(ul) {
-  display: flex;
-  flex-direction: column;
-}
-
-.card:has(ul) .card-content {
-  display: flex;
-  align-items: center;
-  flex: 1;
-}
-
-.card ul {
-  margin: 0;
-  padding-left: 22px;
-}
-
-.card li {
-  margin-bottom: 8px;
-}
-
-.card li:last-child {
-  margin-bottom: 0;
-}
-
-.card a {
-  color: #174d91;
-  overflow-wrap: anywhere;
-}
-
-.card a:hover {
-  color: #733c00;
-}
-
-.card a:focus-visible {
-  outline: 2px solid var(--primary-color);
-  outline-offset: 3px;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-  padding: 26px;
-  background-color: var(--primary-color);
-  color: #ffffff;
-  text-align: center;
-}
-
-footer p {
-  margin: 3px 0;
-}
-
-#lastModified {
-  color: #ffff80;
-  font-size: 0.9rem;
-}
-
-/* =========================
-   TABLETS AND MOBILE
-========================= */
-
-@media screen and (max-width: 700px) {
-  main {
-    grid-template-columns: 1fr;
-    padding: 16px;
-  }
-
-  #course-title {
-    font-size: 1.15rem;
-  }
-
-  nav {
-    flex-wrap: wrap;
-  }
-
-  nav a {
-    flex: 1 1 50%;
-    text-align: center;
-  }
-
-  .page-title {
-    font-size: 1.7rem;
-  }
-
-  .intro {
-    grid-template-columns: minmax(0, 1fr) 110px;
-    gap: 16px;
-  }
-
-  .location {
-    grid-template-columns: 120px minmax(0, 1fr);
-    gap: 16px;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .card-content {
-    padding: 16px;
-  }
-
-  .intro,
-  .location {
-    grid-template-columns: 1fr;
-  }
-
-  .intro > img {
-    width: 140px;
-    margin: 0 auto;
-  }
-
-  .location figure {
-    width: 150px;
-    margin: 0 auto;
-  }
-
-  .card h3 {
-    width: 100%;
-  }
-}
