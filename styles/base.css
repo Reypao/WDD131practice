@@ -3,8 +3,8 @@
 ========================= */
 
 :root {
-  --primary-color: #1d4d70;
-  --nav-color: #333333;
+  --primary-color: #265330;
+  --nav-color: #0e1d0f;
   --text-color: #222222;
   --border-color: #bdbdbd;
 }
@@ -17,7 +17,7 @@
 
 body {
     margin: 0;
-    background-color: #a8b4c9;
+    background-color: #a8c9be;
     color: var(--text-color);
     font-family: "Didact Gothic", Arial, sans-serif;
     font-size: 16px;
