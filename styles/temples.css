@@ -1,0 +1,46 @@
+/* =========================
+   header
+========================= */
+header {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.header-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.side-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+
+}
+
+/* =========================
+   burger-menu
+========================= */
+#menu {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* =========================
+   navigation
+========================= */
+header nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 12px;
+    
+}
