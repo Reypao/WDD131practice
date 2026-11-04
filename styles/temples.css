@@ -1,19 +1,32 @@
 /* =========================
+   General
+========================= */
+:root {
+    --primary-color: #3f0860;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* =========================
    header
 ========================= */
 header {
     background-color: var(--primary-color);
     color: white;
+    border-top: 4px solid #333;
 }
 
 .header-content {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 16px;
+    padding: 16px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 12px;
 }
 
 .side-title {
@@ -27,6 +40,7 @@ header {
 ========================= */
 #menu {
     display: block;
+    padding: 0;
     background: none;
     border: none;
     color: white;
@@ -35,7 +49,7 @@ header {
 }
 
 /* =========================
-   navigation
+   navigation con flexbox
 ========================= */
 header nav {
     display: none;
@@ -43,4 +57,126 @@ header nav {
     width: 100%;
     margin-top: 12px;
     
+}
+
+/* Mostrar el menú cuando JavaScript agregue la clase open. */
+header nav.open {
+    display: flex;
+}
+
+/* Diseño de los enlaces. */
+header nav a {
+    display: block;
+    padding: 12px 16px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* Efecto al pasar el cursor o navegar con el teclado. */
+header nav a:hover,
+header nav a:focus-visible {
+    background-color: rgb(152, 206, 81);
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* =========================
+   Contenido principal
+========================= */
+/* Colocar el título arriba y la galería debajo. */
+main {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 14px;
+    background-color: white;
+}
+
+main h1 {
+    margin: 12px 0 20px;
+    text-align: center;
+}
+
+/* Una sola columna de imágenes en móvil. */
+main .temple-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+    width: 100%;
+}
+
+main .temple-grid figure {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+main .temple-grid figure img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+main .temple-grid figcaption {
+    margin-top: 6px;
+    text-align: center;
+}
+/* =========================
+   Galería: una columna móvil
+========================= */
+.temple-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+
+}
+
+.temple-grid figure {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.temple-grid img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.temple-grid figcaption {
+    margin-top: 6px;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Pantallas medianas */
+@media screen and (min-width: 640px) {
+    .temple-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Pantallas grandes */
+@media screen and (min-width: 900px) {
+    #menu {
+        display: none;
+    }
+
+    header nav,
+    header nav.open {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin-top: 0;
+        gap: 8px;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }
