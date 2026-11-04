@@ -4,23 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temple Album - WDD131- Efrey Guzman</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Effrey Guzman. Temples Album asigment week 2"/>
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals - Effrey Guzman. Temples Album asigment week 2"
+    />
     <meta name="author" content="Efrey Guzman" />
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/temples.css" />
     <link rel="stylesheet" href="styles/temples-large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet"/>
     <script src="scripts/temples.js" defer></script>
-    <script src="scripts/getdates.js" defer></script>
   </head>
   <body>
     <header>
       <div class="header-content">
-        <span class="side-title">Temples Album</span>
-        <button id="menu"  type="button"
-    aria-label="Abrir menú de navegación"
-    aria-expanded="false"
-    aria-controls="navigation">☰</button>
-        <nav>
+        <span class="site-title">Temple Album</span>
+        <button
+          id="menu"
+          type="button"
+          aria-label="Abrir menú de navegación"
+          aria-expanded="false"
+          aria-controls="navigation"
+        >
+          ☰
+        </button>
+        <nav id="navigation">
           <a href="#">Home</a>
           <a href="#">Old</a>
           <a href="#">New</a>
@@ -33,47 +43,46 @@
       <h1>Home</h1>
       <div class="temple-grid">
         <figure>
-          <img src="images/MantiTempleOLD.jpg" alt="temple" />
+          <img src="images/MantiTempleOLD.jpg" alt="Manti Utah temple" />
           <figcaption>Manti Temple</figcaption>
         </figure>
         <figure>
-          <img src="images/SaintGeorgeOLD.jpg" alt="temple" />
+          <img src="images/SaintGeorgeOLD.jpg" alt="Saint George Temple" />
           <figcaption>Saint George Temple</figcaption>
         </figure>
         <figure>
-          <img src="images/LoganTempleOLD.jpg" alt="temple" />
+          <img src="images/LoganTempleOLD.jpg" alt="Logan Temple" />
           <figcaption>Logan Temple</figcaption>
         </figure>
         <figure>
-          <img src="images/CodyWyomingTempleNEW.jpg" alt="temple" />
+          <img src="images/CodyWyomingTempleNEW.jpg" alt="Cody Wyoming Temple" />
           <figcaption>Cody Wyoming Temple</figcaption>
         </figure>
         <figure>
-          <img src="images/SanLuisPotosíMexicoTempleNEW.jpg" alt="temple" />
+          <img src="images/SanLuisPotosíMexicoTempleNEW.jpg" alt="San Luis Potosí Mexico Temple" />
           <figcaption>San Luis Potosí Mexico Temple</figcaption>
         </figure>
         <figure>
-          <img src="images/CiudadJuarezMexicotempleSMALL1.jpg" alt="temple" />
+          <img src="images/CiudadJuarezMexicotempleSMALL1.jpg" alt="Ciudad Juarez Mexico Temple" />
           <figcaption>Ciudad Juarez Mexico Temple</figcaption>
         </figure>
         <figure>
-          <img src="images/LosAngelesCaliforniaLARGE2.jpg" alt="temple" />
+          <img src="images/LosAngelesCaliforniaLARGE2.jpg" alt="Los Angeles California Temple" />
           <figcaption>Los Angeles California Temple</figcaption>
         </figure>
         <figure>
-          <img src="images/WasinghtonDCtempleLARGE3.jpg" alt="temple" />
+          <img src="images/WasinghtonDCtempleLARGE3.jpg" alt="Washighton DC Temple" />
           <figcaption>Washighton DC Temple</figcaption>
         </figure>
         <figure>
-          <img src="images/jordan-river-utah-templeLARGE1.jpg" alt="temple" />
+          <img src="images/jordan-river-utah-templeLARGE1.jpg" alt="Jordan River Temple" />
           <figcaption>Jordan River Temple</figcaption>
         </figure>
-
       </div>
     </main>
     <footer>
-        <p>&copy; <span id="currentYear"></span>Efrey Guzman- Utah - U.S</p>
-        <p id="lastModified"></p>
+      <p>&copy; <span id="currentYear"></span>Efrey Guzman- Utah - U.S</p>
+      <p id="lastModified"></p>
     </footer>
   </body>
 </html>

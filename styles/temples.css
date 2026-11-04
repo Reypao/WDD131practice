@@ -29,7 +29,7 @@ header {
     gap: 12px;
 }
 
-.side-title {
+.site-title {
     font-size: 1.6rem;
     font-weight: bold;
 
@@ -101,44 +101,18 @@ main h1 {
 }
 
 /* Una sola columna de imágenes en móvil. */
-main .temple-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    gap: 26px;
-    width: 100%;
-}
-
-main .temple-grid figure {
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
-}
-
-main .temple-grid figure img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
-
-main .temple-grid figcaption {
-    margin-top: 6px;
-    text-align: center;
-}
-/* =========================
-   Galería: una columna móvil
-========================= */
 .temple-grid {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     gap: 26px;
-
+    width: 100%;
 }
 
 .temple-grid figure {
     width: 100%;
     max-width: 320px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .temple-grid img {
@@ -149,34 +123,7 @@ main .temple-grid figcaption {
 
 .temple-grid figcaption {
     margin-top: 6px;
-    color: var(--primary-color);
-    font-size: 0.9rem;
     text-align: center;
-}
-
-/* Pantallas medianas */
-@media screen and (min-width: 640px) {
-    .temple-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-/* Pantallas grandes */
-@media screen and (min-width: 900px) {
-    #menu {
-        display: none;
-    }
-
-    header nav,
-    header nav.open {
-        display: flex;
-        flex-direction: row;
-        width: auto;
-        margin-top: 0;
-        gap: 8px;
-    }
-
-    .temple-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
+    color: var(--primary-color);
+    font-size: 0.9px;
 }

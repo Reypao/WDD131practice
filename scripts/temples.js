@@ -6,6 +6,7 @@ document.getElementById("currentYear").textContent =
 document.getElementById("lastModified").textContent =
   `Last Modification: ${document.lastModified}`;
 
+// controla el menu hamburguesa.
 const menuButton = document.querySelector("#menu");
 const navigation = document.querySelector("#navigation");
 
