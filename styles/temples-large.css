@@ -11,9 +11,6 @@
   #menu {
     display: none;
   }
-  main .temple-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 
   header nav,
   header nav.open {

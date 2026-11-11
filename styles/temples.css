@@ -2,7 +2,7 @@
    General
 ========================= */
 :root {
-    --primary-color: #3f0860;
+    --primary-color: #0d3628;
 }
 
 * {
@@ -30,7 +30,7 @@ header {
 }
 
 .site-title {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-weight: bold;
 
 }
@@ -119,11 +119,14 @@ main h1 {
     display: block;
     width: 100%;
     height: auto;
+    aspect-ratio: 3/2;
+    object-position: center;
+    
 }
 
 .temple-grid figcaption {
     margin-top: 6px;
     text-align: center;
     color: var(--primary-color);
-    font-size: 0.9px;
+    font-size: 0.9rem;
 }
